@@ -10,15 +10,17 @@
 /* header */
 
 .header{
-    display:flex;
-    width:1280px;
-    margin:auto;
+    display: flex;
+    width: 100%;
+    margin: auto;
     height:86px;
     margin-bottom : 100px;
 }
 
 .logo{
+    flex : 1;
     margin-top : 16px;
+    padding-left : 100px;
     width : 300px;
 }
 
@@ -35,16 +37,69 @@
 }
 
 .nav{
+    flex : 3;
     display : flex;
     justify-content : flex-end;
-    line-height : 86px;
-    width : calc(1280px - 300px);
-    margin-top : 16px;
-    border-bottom: 1px #000 solid;
+    line-height : 40px;
+    padding-top : 16px;
+    padding-right : 100px;
 }
 
 .nav > li{
     margin-left : 84px;
+}
+
+.btn{
+    padding : 10px;
+    color: #000;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;
+}
+
+.btn{
+    border:1px solid transparent; 
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #6098FF;
+    box-shadow: inset 0px 0px 0px #6098FF;
+    display: block;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.btn:hover::before {
+    width:100%;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index:-1;
+    width: 0%;
+    height:1px;
+    background: #6098FF;
+    -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+    transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+}
+.btn:hover::after {
+    width:100%;
+}
+.btn:hover{
+    border-left:1px solid #6098FF;
+    border-right:1px solid #6098FF;
 }
 
 /* footer */
@@ -64,7 +119,7 @@ footer > div:first-child{
 footer > div:last-child{
     flex:9;
     color:#fff;
-    line-height : 1.8;
+    line-height : 1.5;
     padding-inline-start : 1.5em;
 }
 
