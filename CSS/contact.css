@@ -1,34 +1,226 @@
-.contact0{
-    width : 100%;
-    height : 700px;
+/* intro */
+
+.intro{
+    height: 100px;
+    width: 400px;
+    margin : 230px auto;
+    position: relative;
 }
 
-.contact0 > h1 {
+.intro > p{
+    font-family: Lato,"Helvetica Neue" ;
+    font-weight: 300;
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    bottom: 0px;
+    margin: 0;
+    top:70px;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+
+.intro:hover p {
+    bottom:0px;
+    top:85px;
+    opacity: 1;
+    transition: all .2s ease;
+    z-index: 2;
+}
+
+/* contact0 */
+.contact0{
+    width : 100%;
+    height : 1200px;
+    margin-top : 600px;
+    margin-bottom : 200px;
+}
+
+.members{
+    width : 1280px;
+    display: flex;
+    margin: 50px auto;
+}
+
+/* member_profile */
+
+.jm{
+    display: none;
+}
+
+.gc{
+    display: none;
+}
+
+.pt{
+    display: none;
+}
+
+.gr{
+    display: none;
+}
+
+
+.member_profile {
+    position: absolute;
+    top: 1000px;
+    left : 425px;
+    width: 600px;
+    margin: auto;
+    padding: 40px;
+    color: #1E1E1E;
+    background-color: #FFF;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 10px;
+}
+
+.member_profile section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.member_profile section:last-child {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0;
+}
+
+.headline {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.headline > .name {
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+
+.headline > .eng_name {
+    margin-bottom: 60px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.headline > .profile_img {
+    width: 150px;
+    border: 1px solid #A4A4A4;
+    border-radius: 100%;
+}
+
+.introduce {
+    padding-top: 55px;
+    width: 320px;
+}
+
+.introduce > .contact {
+    margin-bottom: 30px;
+}
+
+.introduce > .contact::before {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 3px;
+    background-color: #A4A4A4;
+}
+
+.introduce > .contact::after {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #A4A4A4;
+}
+
+.introduce > .contact ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin: 15px 0;
+}
+
+.introduce > .contact .contact_list {
+    display: flex;
+}
+
+.introduce > .contact .contact_list .phone_img{
+    width: 25px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.introduce > .contact .contact_list .email_img{
+    width: 25px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.profile h2 {
+    margin-bottom: 10px;
+}
+
+.part_title {
+    width: 150px;
     text-align: center;
 }
 
-.contact0{
-    margin: 0 auto;
-    width : 1200px;
-    height : 800px;
-    margin-top: 100px;
-    position :relative;
+.part_content {
+    width: 320px;
 }
 
-#detail_jm{
-    position: absolute;
-    width: 1200px;
-    height: 500px;
-    background-color: white;
-    top: 100px;
-    border-radius: 20px;
-    display: none;
-    border : 1px solid black;
+.content_list--title {
+    display: flex;
+    flex-flow: column;
+    width: 80px;
+    margin-right: 50px;
+}
+
+.content_list--content {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+}
+
+.part_content::before {
+    content: "";
+    display: block;
+    width: 320px;
+    height: 3px;
+    margin-bottom: 30px;
+    background-color: #A4A4A4;
+}
+
+.content_list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.content_list:last-child {
+    margin-bottom: 0;
+}
+
+.sns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sns > .mapple {
+    margin-right: 20px;
+}
+
+.sns_img {
+    width: 25px;
 }
 
 #close{
     width: 40px;
-    top : 5px;
-    right : 5px;
+    top : 7px;
+    right : 7px;
     position :absolute;
 }
