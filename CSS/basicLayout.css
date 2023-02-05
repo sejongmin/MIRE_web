@@ -13,20 +13,19 @@
     display: flex;
     width: 100%;
     margin: auto;
-    height:86px;
+    height: 90px;
     margin-bottom : 100px;
 }
 
 .logo{
     flex : 1;
-    margin-top : 16px;
     padding-left : 100px;
     width : 300px;
 }
 
 .logo_image{
-    width : 50px;
-    height : 50px;
+    width : 130px;
+    height : 130px;
 }
 
 .logo_text{
@@ -41,7 +40,7 @@
     display : flex;
     justify-content : flex-end;
     line-height : 40px;
-    padding-top : 16px;
+    padding-top : 25px;
     padding-right : 100px;
 }
 
@@ -116,14 +115,13 @@ footer > div:first-child{
     color: #fff;
 }
 
-footer > div:last-child{
-    flex:9;
-    color:#fff;
-    line-height : 1.5;
-    padding-inline-start : 1.5em;
+.logo_x_image{
+    width : 100px;
 }
 
-footer > div > p{
-    font-size : 14px;
-    color : rgb(150, 150, 150)
+footer > div:last-child{
+    flex:9;
+    line-height : 1.4;
+    padding-inline-start : 1.5em;
+    padding-top: 10px;
 }

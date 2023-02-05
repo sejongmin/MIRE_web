@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    /* font-family: Lato,"Helvetica Neue" ; */
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: "IBMPlexSansKR-Regular", sans-serif;
+}
+.f-center{
+    text-align: center;
+}
+
+.fs-intro{
+    font-size:60px;
+}
+
+.fs-main{
+    font-size: 38px;
+    padding-top: 50px;
+}
+
+.fs-big {
+    font-size: 20px;
+}
+
+.fs-large {
+    font-size: 17px;
+}
+
+.fs-medium {
+    font-size: 13px;
+    line-height: 20.8px;    
+}
+
+.fs-small {
+    font-size: 12px;
+    line-height: 19.2px;
+}
+
+.fs-tiny {
+    font-size: 11px;
+}
+
+.fc-white{
+    color: #e4e4e4;
+}
+
+.fc-gray {
+    color: #494949;
+}
+
+.fc-lgray {
+    color: #6D6D6D;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-light{
+    font-weight: 100;
+}
+
+.desc {
+    font-weight: 400;
+    color: #494949;
+}
