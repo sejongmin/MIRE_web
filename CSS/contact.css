@@ -6,3 +6,29 @@
 .contact0 > h1 {
     text-align: center;
 }
+
+.contact0{
+    margin: 0 auto;
+    width : 1200px;
+    height : 800px;
+    margin-top: 100px;
+    position :relative;
+}
+
+#detail_jm{
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    background-color: white;
+    top: 100px;
+    border-radius: 20px;
+    display: none;
+    border : 1px solid black;
+}
+
+#close{
+    width: 40px;
+    top : 5px;
+    right : 5px;
+    position :absolute;
+}
