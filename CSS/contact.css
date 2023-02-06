@@ -1,7 +1,7 @@
 /* intro */
 
 .intro{
-    height: 100px;
+    height: 600px;
     width: 400px;
     margin : 230px auto;
     position: relative;
@@ -31,17 +31,118 @@
 }
 
 /* contact0 */
+
 .contact0{
     width : 100%;
-    height : 1200px;
-    margin-top : 600px;
-    margin-bottom : 200px;
+    height : 1400px;
 }
 
-.members{
+.contact0::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: #f5f5f5;
+}
+
+.contact0 > h1{
+    margin-top : 70px;
+}
+
+.members_1{
     width : 1280px;
     display: flex;
-    margin: 50px auto;
+    margin: 100px auto;
+}
+
+.members_1 > li{
+    position : relative;
+    flex : 1;
+    height : 270px;
+    padding : 20px;
+}
+
+.members_1 > li > #more{
+    position: absolute;
+    border : 1px solid black;
+    border-radius: 5px;
+    width : 100px;
+    cursor : pointer;
+    bottom : 10px;
+    left : 50%;
+    transform: translate(-50%, 0);
+}
+
+.members_1 > li > #basic_img{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width : 170px;
+    border-radius: 30%;
+}
+
+.members_2{
+    width : 960px;
+    display: flex;
+    margin: 100px auto;
+}
+
+.members_2 > li{
+    position : relative;
+    flex : 1;
+    height : 270px;
+    padding : 20px;
+}
+
+.members_2 > li > #more{
+    position: absolute;
+    border : 1px solid black;
+    border-radius: 5px;
+    width : 100px;
+    cursor : pointer;
+    bottom : 10px;
+    left : 50%;
+    transform: translate(-50%, 0);
+}
+
+.members_2 > li > #basic_img{
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -50%);
+    width : 170px;
+    border-radius: 30%;
+}
+
+/* contact1 */
+
+.contact1{
+    width : 100%;
+    height : 1200px;
+}
+
+.contact1::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 15px;
+    background-color: #f0f0f0;
+}
+
+.contact1 > h1{
+    margin-top : 70px;
+}
+
+.contact1 > .map{
+    width : 1280px;
+    margin : 70px auto;
+}
+
+.contact1 iframe{
+    width: 1280px;
+    height: 700px;
+    border:0;
 }
 
 /* member_profile */
@@ -62,11 +163,22 @@
     display: none;
 }
 
+.yj{
+    display: none;
+}
+
+.sj{
+    display: none;
+}
+
+.hs{
+    display: none;
+}
 
 .member_profile {
     position: absolute;
-    top: 1000px;
-    left : 425px;
+    top: 1200px;
+    left : 420px;
     width: 600px;
     margin: auto;
     padding: 40px;
