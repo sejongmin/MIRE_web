@@ -110,11 +110,12 @@ a {
 .btn:hover{
     color:#fff;  
 }
+
 .btn:hover::before{
     opacity: 1;
     background-color: #000;
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
+    -webkit-transform: scaleY(0.8);
+    transform: scaleY(0.8);
     transition: -webkit-transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity .4s;
     transition: transform .6s cubic-bezier(.08, .35, .13, 1.02), opacity
 }

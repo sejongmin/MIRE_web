@@ -119,47 +119,17 @@
 
 .contact1{
     width : 100%;
-    height : 1200px;
-}
-
-.contact1::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 15px;
-    background-color: #f0f0f0;
-}
-
-.contact1 > h1{
-    margin-top : 70px;
-}
-
-.contact1 > .map{
-    width : 1280px;
-    margin : 70px auto;
-}
-
-.contact1 iframe{
-    width: 1280px;
-    height: 700px;
-    border:0;
-}
-
-/* contact2 */
-
-.contact2{
-    width : 100%;
     height : 300px;
     background: linear-gradient(45deg, rgb(250, 141, 250), rgb(255, 115, 0));
     margin-top : 100px;
     margin-bottom : 100px;
 }
 
-.contact2 > h2{
+.contact1 > h2{
     padding-top : 100px;
 }
 
-.contact2 > .more{
+.contact1 > .more{
     width : 100px;
     height : 50px;
     margin : 20px auto;
@@ -168,7 +138,7 @@
     cursor : pointer;
 }
 
-.contact2 > .more > p{
+.contact1 > .more > p{
     padding-top : 12px;
 }
 
@@ -205,7 +175,8 @@
 .member_profile {
     position: absolute;
     top: 1200px;
-    left : 420px;
+    left : 50%;
+    transform: translate(-50%, 0);
     width: 600px;
     margin: auto;
     padding: 40px;
@@ -364,3 +335,4 @@
     position :absolute;
     cursor:pointer;
 }
+

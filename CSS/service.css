@@ -54,10 +54,22 @@
     display: flex;
     margin:50px auto;
     height:427px;
+}
+
+.A > div:first-child{
+    width : 635px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+.A > div:last-child{
+    width : 635px;
+    margin-right : 5px;
     overflow: hidden;
 }
 
 .A img {
+    width: 635px;
     transition: all 0.2s linear;
 }
 .A img:hover{
@@ -117,18 +129,6 @@
 
 .B_2 > li:not(:last-child){
     margin-right: 10px;
-}
-
-.change_img{
-    position : absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 0.15s linear;
-}
-
-.B_2 > li:hover .change_img{
-    opacity : 1;
 }
 
 /* service2 */
