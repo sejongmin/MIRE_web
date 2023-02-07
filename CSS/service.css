@@ -54,6 +54,14 @@
     display: flex;
     margin:50px auto;
     height:427px;
+    overflow: hidden;
+}
+
+.A img {
+    transition: all 0.2s linear;
+}
+.A img:hover{
+    transform: scale(1.2);
 }
 
 /* service1 */
@@ -83,10 +91,10 @@
 }
 
 .B_1 > li{
+    position: relative;
     width: 420px;
     height: 420px;
     margin-bottom : 10px;
-    border-radius: 10px;
 }
 
 .B_1 > li:not(:last-child){
@@ -100,18 +108,174 @@
 }
 
 .B_2 > li{
+    position: relative;
     width: 420px;
     height: 420px;
     margin-bottom : 10px;
-    border-radius: 10px;
+
 }
 
 .B_2 > li:not(:last-child){
     margin-right: 10px;
 }
 
+.change_img{
+    position : absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.15s linear;
+}
+
+.B_2 > li:hover .change_img{
+    opacity : 1;
+}
+
 /* service2 */
 
 .service2{
     width : 100%;
+}
+
+
+/* B animation */
+
+figure.fourLine {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    min-width: 420px;
+    max-width: 420px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    background-color: #000000;
+}
+  figure.fourLine *,
+  figure.fourLine *:before,
+  figure.fourLine *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.55s ease;
+    transition: all 0.55s ease;
+}
+figure.fourLine img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+    opacity: 0.9;
+}
+figure.fourLine .title {
+    position: absolute;
+    top: 58%;
+    left: 50px;
+    padding: 5px 10px 10px;
+}
+figure.fourLine .title:before,
+figure.fourLine .title:after {
+    height: 2px;
+    width: 400px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+}
+figure.fourLine .title:before {
+    top: 0;
+    left: 10px;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+figure.fourLine .title:after {
+    bottom: 0;
+    right: 10px;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+figure.fourLine .title div:before,
+figure.fourLine .title div:after {
+    width: 2px;
+    height: 400px;
+    position: absolute;
+    content: '';
+    background-color: #ffffff;
+}
+figure.fourLine .title div:before {
+    top: 10px;
+    right: 0;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+}
+figure.fourLine .title div:after {
+    bottom: 10px;
+    left: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+figure.fourLine h2,
+figure.fourLine h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+figure.fourLine h2 {
+    font-weight: 400;
+}
+figure.fourLine h4 {
+    display: block;
+    font-weight: 700;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    color: #000000;
+}
+figure.fourLine figcaption {
+    position: absolute;
+    bottom: 42%;
+    left: 50px;
+    text-align: left;
+    opacity: 0;
+    padding: 5px 60px 5px 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+figure.fourLine figcaption p {
+    margin: 0;
+}
+figure.fourLine a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+figure.fourLine:hover img,
+figure.fourLine.hover img {
+    zoom: 1;
+    filter: alpha(opacity=35);
+    -webkit-opacity: 0.35;
+    opacity: 0.35;
+}
+figure.fourLine:hover .title:before,
+figure.fourLine.hover .title:before,
+figure.fourLine:hover .title:after,
+figure.fourLine.hover .title:after,
+figure.fourLine:hover .title div:before,
+figure.fourLine.hover .title div:before,
+figure.fourLine:hover .title div:after,
+figure.fourLine.hover .title div:after {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+figure.fourLine:hover .title:before,
+figure.fourLine.hover .title:before,
+figure.fourLine:hover .title:after,
+figure.fourLine.hover .title:after {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+}
+figure.fourLine:hover figcaption,
+figure.fourLine.hover figcaption {
+    opacity: 1;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
