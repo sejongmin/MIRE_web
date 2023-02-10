@@ -1,17 +1,17 @@
 /* intro */
 
 .intro{
+    position: relative;
     height: 800px;
     width: 100%;
-    position: relative;
 }
 
 .intro .box{
     position: absolute;
+    width: 300px;
     top:25%;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
 }
 
 .intro p{
@@ -19,13 +19,10 @@
     font-weight: 300;
     position: absolute;
     width: 100%;
+    top:70px;
     height: 25px;
     text-align: center;
-    bottom: 0px;
-    margin: 0;
-    top:70px;
     opacity: 0;
-    text-transform: uppercase;
     transition: all .2s ease;
 }
 
@@ -51,9 +48,13 @@
     background-color: #f0f0f0;
 }
 
+.service0 > h1{
+    margin-top: 50px;
+}
+
 .A{
-    width:1280px;
     display: flex;
+    width:1280px;
     margin:50px auto;
 }
 
@@ -95,7 +96,7 @@
 }
 
 .service1 > h1{
-    margin-top : 70px;
+    margin-top : 50px;
 }
 
 .B_1{
@@ -138,36 +139,38 @@
 
 .service2{
     width : 100%;
+    padding: 0 0 100px 0;
 }
-
 
 /* B animation */
 
 figure.fourLine {
     font-family: 'Raleway', Arial, sans-serif;
+    font-size: 16px;
     position: relative;
-    overflow: hidden;
     width: 100%;
     height: auto;
-    color: #ffffff;
     text-align: center;
-    font-size: 16px;
-    background-color: #000000;
+    overflow: hidden;
+    color: #ffffff;
 }
+
   figure.fourLine *,
   figure.fourLine *:before,
   figure.fourLine *:after {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     -webkit-transition: all 0.55s ease;
     transition: all 0.55s ease;
 }
+
 figure.fourLine img {
     max-width: 100%;
     backface-visibility: hidden;
     vertical-align: top;
     opacity: 0.9;
 }
+
 figure.fourLine .title {
     position: absolute;
     top: 58%;
@@ -176,24 +179,27 @@ figure.fourLine .title {
 }
 figure.fourLine .title:before,
 figure.fourLine .title:after {
-    height: 2px;
-    width: 600px;
-    position: absolute;
     content: '';
+    position: absolute;
+    width: 600px;
+    height: 2px;
     background-color: #ffffff;
 }
+
 figure.fourLine .title:before {
     top: 0;
     left: 10px;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
 }
+
 figure.fourLine .title:after {
-    bottom: 0;
     right: 10px;
+    bottom: 0;
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
 }
+
 figure.fourLine .title div:before,
 figure.fourLine .title div:after {
     width: 2px;
@@ -202,26 +208,31 @@ figure.fourLine .title div:after {
     content: '';
     background-color: #ffffff;
 }
+
 figure.fourLine .title div:before {
     top: 10px;
     right: 0;
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
 }
+
 figure.fourLine .title div:after {
     bottom: 10px;
     left: 0;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
 }
+
 figure.fourLine h2,
 figure.fourLine h4 {
     margin: 0;
     text-transform: uppercase;
 }
+
 figure.fourLine h2 {
     font-weight: 400;
 }
+
 figure.fourLine h4 {
     display: block;
     font-weight: 700;
@@ -229,6 +240,7 @@ figure.fourLine h4 {
     padding: 5px 10px;
     color: #000000;
 }
+
 figure.fourLine figcaption {
     position: absolute;
     bottom: 42%;
@@ -240,9 +252,11 @@ figure.fourLine figcaption {
     font-weight: 500;
     letter-spacing: 1.5px;
 }
+
 figure.fourLine figcaption p {
     margin: 0;
 }
+
 figure.fourLine a {
     position: absolute;
     top: 0;
@@ -250,6 +264,7 @@ figure.fourLine a {
     left: 0;
     right: 0;
 }
+
 figure.fourLine:hover img,
 figure.fourLine.hover img {
     zoom: 1;
@@ -257,6 +272,7 @@ figure.fourLine.hover img {
     -webkit-opacity: 0.35;
     opacity: 0.35;
 }
+
 figure.fourLine:hover .title:before,
 figure.fourLine.hover .title:before,
 figure.fourLine:hover .title:after,
@@ -268,6 +284,7 @@ figure.fourLine.hover .title div:after {
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0);
 }
+
 figure.fourLine:hover .title:before,
 figure.fourLine.hover .title:before,
 figure.fourLine:hover .title:after,
@@ -275,6 +292,7 @@ figure.fourLine.hover .title:after {
     -webkit-transition-delay: 0.15s;
     transition-delay: 0.15s;
 }
+
 figure.fourLine:hover figcaption,
 figure.fourLine.hover figcaption {
     opacity: 1;

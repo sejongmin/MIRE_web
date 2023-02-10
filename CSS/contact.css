@@ -19,19 +19,17 @@
     font-weight: 300;
     position: absolute;
     width: 100%;
-    text-align: center;
     top:70px;
-    margin: 0;
+    text-align: center;
     opacity: 0;
-    text-transform: uppercase;
     transition: all .2s ease;
 }
 
 .intro .box:hover p {
     top:85px;
+    z-index: 2;
     opacity: 1;
     transition: all .2s ease;
-    z-index: 2;
 }
 
 /* contact0 */
@@ -50,14 +48,18 @@
     background-color: #f5f5f5;
 }
 
+.contact0 > h1{
+    margin-top: 50px;
+}
+
 .members{
-    width: 90%;
-    margin: auto;
-    padding: 0 5%;
     display: flex;
     align-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 0 5%;
 }
 
 .members > li{
@@ -89,8 +91,6 @@
     width : 60%;
     margin : 5% 20% 5% 20%;
     border-radius: 30%;
-    max-width: 200px;
-    min-width: 100px;
 }
 
 /* contact1 */
@@ -98,9 +98,8 @@
 .contact1{
     width : 100%;
     height : 300px;
+    margin: 100px 0;
     background: linear-gradient(45deg, rgb(250, 141, 250), rgb(255, 115, 0));
-    margin-top : 100px;
-    margin-bottom : 100px;
 }
 
 .contact1 > h2{
@@ -122,33 +121,17 @@
 
 
 
+
 /* member_profile */
 
-.jm{
-    display: none;
-}
-
-.gc{
-    display: none;
-}
-
-.pt{
-    display: none;
-}
-
-.gr{
-    display: none;
-}
-
-.yj{
-    display: none;
-}
-
-.sj{
-    display: none;
-}
-
-.hs{
+.jm,
+.gc,
+.pt,
+.gr,
+.yj,
+.sj,
+.hs
+{
     display: none;
 }
 
@@ -156,26 +139,26 @@
     position: absolute;
     top: 10%;
     left : 50%;
-    transform: translate(-50%, 0);
     width: 600px;
-    margin: auto;
     padding: 40px;
+    margin: auto;
+    border-radius: 10px;
     color: #1E1E1E;
     background-color: #FFF;
+    transform: translate(-50%, 0);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border-radius: 10px;
 }
 
 .member_profile section {
     display: flex;
-    justify-content: space-between;
     margin-bottom: 70px;
+    justify-content: space-between;
 }
 
 .member_profile section:last-child {
     display: flex;
-    justify-content: end;
     margin-bottom: 0;
+    justify-content: end;
 }
 
 .headline {
@@ -185,14 +168,14 @@
 }
 
 .headline > .name {
-    margin-bottom: 5px;
     font-size: 26px;
+    margin-bottom: 5px;
 }
 
 .headline > .eng_name {
-    margin-bottom: 60px;
     font-size: 13px;
     font-weight: 400;
+    margin-bottom: 60px;
 }
 
 .headline > .profile_img {
@@ -202,8 +185,8 @@
 }
 
 .introduce {
-    padding-top: 55px;
     width: 320px;
+    padding-top: 55px;
 }
 
 .introduce > .contact {
@@ -228,9 +211,9 @@
 
 .introduce > .contact ul {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
     margin: 15px 0;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .introduce > .contact .contact_list {

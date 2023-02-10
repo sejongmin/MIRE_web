@@ -1,17 +1,17 @@
 /* intro */
 
 .intro{
-    height: 800px;
-    width: 100%;
     position: relative;
+    width: 100%;
+    height: 800px;
 }
 
 .intro .box{
     position: absolute;
+    width: 300px;
     top:25%;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
 }
 
 .intro p{
@@ -19,18 +19,17 @@
     font-weight: 300;
     position: absolute;
     width: 100%;
-    text-align: center;
     top:70px;
+    text-align: center;
     opacity: 0;
-    text-transform: uppercase;
     transition: all .2s ease;
 }
 
 .intro .box:hover p {
     top:85px;
+    z-index: 2;
     opacity: 1;
     transition: all .2s ease;
-    z-index: 2;
 }
 
 /* about0 */
@@ -46,6 +45,10 @@
     width: 100%;
     height: 15px;
     background-color: #f5f5f5;
+}
+
+.about0 > h1{
+    margin-top: 50px;
 }
 
 .future{
@@ -69,6 +72,7 @@
 
 .about2{
     width : 100%;
+    padding : 0 0 100px 0;
     background-color: #EAF6FE;
 }
 
@@ -78,6 +82,10 @@
     width: 100%;
     height: 15px;
     background-color: #f5f5f5;
+}
+
+.about2 > h1{
+    margin-top: 50px;
 }
 
 .organization{
@@ -94,6 +102,10 @@
 .about3{
     width : 100%;
     padding : 0 0 100px 0;
+}
+
+.about3 > h1{
+    margin-top: 50px;
 }
 
 
@@ -124,8 +136,7 @@
 
 .about1 {
     width : 100%;
-    overflow-x: hidden;
-    padding: 0 0 100px 0;
+    padding: 50px 0 100px 0;
 }
 
 .about1::before {
@@ -137,7 +148,7 @@
 }
 
 .about1 > h1{
-    margin-top : 50px;
+    margin-top: 50px;
 }
 
 
