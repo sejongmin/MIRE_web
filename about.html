@@ -2,45 +2,53 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=0.8, user-scalable=no">
+        <title>MI:RE-HOME</title>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="JS/basic.js" defer></script>
+        <script src="JS/about.js" defer></script>
         <link rel="stylesheet" type="text/css" href="CSS/about.css">
         <link rel="stylesheet" type="text/css" href="CSS/basicLayout.css">
         <link rel="stylesheet" type="text/css" href="CSS/font.css">
-        <script src="JS/about.js" defer></script>
-        <script src="JS/basicJS.js" defer></script>
+        <link rel="stylesheet" media="(min-width:0px) and (max-width: 900px)" href="CSS/mobile.css">
     </head>
     <body>
-        
-        <div class="header">
-            <div class="logo">
-                <a href="index.html">
-                    <image class="logo_image" src="IMAGE/logo_c.jpg"></image>
-                </a>
+        <header>
+            <div class="left">
+                <h1><a href="index.html">MI:RE</a></h1>
+                <a href="#a" class="all">All Menu</a>
             </div>
+            <div class="right">
+                <div class="nav">
+                    <h2>MI:RE</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="service.html">SERVICE</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#a" class="close">close</a>
+                </div>
+            </div>
+        </header>
+        <div class=".dim"></div>
 
-            <ul class="nav">
-                <li><a href="index.html" class="btn">HOME</a></li>
-                <li><a href="about.html" class="btn">ABOUT</a></li>
-                <li><a href="service.html" class="btn">SERVICE</a></li>
-                <li><a href="contact.html" class="btn">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="progressive">
-            <span class="bar"></span>
-        </div>
-        <div class="wrap">
+        <main>
             <div class="intro">
-                <h1 class="f-center fs-intro">ABOUT</h1>
-                <p class="f-center fs-big fc-lgray">who are we?</p>
+                <div class="box">
+                    <h1 class="f-center fs-intro">ABOUT</h1>
+                    <p class="f-center fs-big fc-lgray">who are we?</p>
+                </div>
             </div>
 
             <div class="about0">
                 <h1 class="f-center fs-main">소개</h1>
-                <div class="f-center fs-big fc-lgray">미래에 대해 소개합니다!</div>
-                <div class="introduce">
-                    <div class="group_photo">
-                        <image src="IMAGE/about/about_1.jpg"></image>
-                    </div>
-                    <div class="contents1 fs-large">
+                <h2 class="f-center fs-big fc-lgray">미래에 대해 소개합니다!</h2>
+                <div class="future">
+                    <image src="IMAGE/about/about_1.jpg" alt="group"></image>
+                    <p class="contents1 fs-large">
                         미래(未來, future, 앞날)는 과거, 현재와 함께 시간 구분 개념 중 하나로서 현재의 다음 시간대를 반드시 다가오는 시간을 의미하는 단어이다.<br><br>
                         미래는 아직 일어나지 않은 예측불허한 시간을 말한다. 명확한 구분 자체가 모호하므로 일부에서는 과거와 미래만을 논하는 것이 옳다는 의견도 있다. 사전적으로만 보면 당장 1퀙토초 뒤의 시간조차도 무슨 일이 날지 정확히 못 박을 수 없는 미래이다.<br><br>
                         한자를 풀이하면 미래라는 낱말은 아직 오지 않았다는 의미이다. 참고로 불교 세계관의 전세(前世, 전생), 현세(現世), 내세(來世, 未來世미래세의 준말)에서 유래했다.<br><br>
@@ -48,13 +56,13 @@
                         불확정성 원리가 증명됨으로써 미래를 완전히 예측하는 것은 불가능하다는 게 정설이 되었다.<br><br>
                         미래에 대해서 연구하는 학문을 미래학(futurology)이라고 한다. 또한, 미래를 연구하는 사람을 미래학자라고 한다.<br><br>
                         사람 이름으로 자주 쓰이기도 하다. 윤미래라든가. 일본에서도 마찬가지로 미라이가 간혹 이름으로 쓰인다. 꿈과 희망을 주기 좋은 소재인 듯하다.<br><br>
-                    </div>
+                    </p>
                 </div>
             </div>
 
             <div class="about1">
                 <h1 class="f-center fs-main">역사</h1>
-                <div class="f-center fs-big fc-lgray">미래의 역사입니다</div>
+                <h2 class="f-center fs-big fc-lgray">미래의 역사입니다</h2>
                 <section class="timeline">
                     <ul>
                         <li>
@@ -111,34 +119,34 @@
             
             <div class="about2">
                 <h1 class="f-center fs-main">조직도</h1>
-                <div class="f-center fs-big fc-lgray">미래는 수평적인 관계를 유지합니다!</div>
+                <h2 class="f-center fs-big fc-lgray">미래는 수평적인 관계를 유지합니다!</h2>
 
                 <div class="organization">
-                    <image src="IMAGE/about/about_2.jpg"></image>
+                    <image src="IMAGE/about/about_2.jpg" alt="조직도">
                 </div>
             </div>
 
             <div class="about3">
                 <h1 class="f-center fs-main">위치</h1>
-                <div class="f-center fs-big fc-lgray">풍무동 푸르지오2차 책방</div>
+                <h2 class="f-center fs-big fc-lgray">풍무동 푸르지오2차 책방</h2>
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1175.4093269707196!2d126.72732089425352!3d37.6090999585271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c838864eb41b7%3A0x25b51836d0f27c08!2z6rK96riw64-EIOq5gO2PrOyLnCDtko3rrLTrj5kgMTc1LTI!5e0!3m2!1sko!2skr!4v1675673878439!5m2!1sko!2skr" allowfullscreen="" ; loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </div>
+        </main>
 
-            <footer>
-                <div>
-                    <img class="logo_x_image" src="IMAGE/logo_x.png" alt="LOGO">
-                </div>
-                <div>
-                    <p class="fs-large fc-white fw-light">
-                        대표이사 : 주미래 <br>
-                        주소 : 대한민국 경기도 김포시 풍무동 . <br>
-                        전화 : 010 - 8748 - 4049 <br>
-                    </p>
-                    <p class="fs-medium fc-lgray">COPYRIGHT ⓒ 2023. MI:RE. BACK TO THE FUTURE.</p>
-                </div>
-            </footer>
+        <footer>
+            <div>
+                <h1>MI:RE</h1>
+            </div>
+            <div>
+                <p class="fs-large fc-white fw-light">
+                    대표이사 : 주미래 <br>
+                    주소 : 대한민국 경기도 김포시 풍무동 . <br>
+                    전화 : 010 - 8748 - 4049 <br>
+                </p>
+                <p class="fs-medium fc-lgray">COPYRIGHT ⓒ 2023. MI:RE. BACK TO THE FUTURE.</p>
+            </div>
+        </footer>
     </body>
 </html>

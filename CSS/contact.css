@@ -1,29 +1,33 @@
 /* intro */
 
 .intro{
-    height: 600px;
-    width: 400px;
-    margin : 230px auto;
     position: relative;
+    width: 100%;
+    height: 800px;
 }
 
-.intro > p{
+.intro .box{
+    position: absolute;
+    width: 300px;
+    top:25%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.intro p{
     font-family: Lato,"Helvetica Neue" ;
     font-weight: 300;
     position: absolute;
     width: 100%;
-    height: 25px;
     text-align: center;
-    bottom: 0px;
-    margin: 0;
     top:70px;
+    margin: 0;
     opacity: 0;
     text-transform: uppercase;
     transition: all .2s ease;
 }
 
-.intro:hover p {
-    bottom:0px;
+.intro .box:hover p {
     top:85px;
     opacity: 1;
     transition: all .2s ease;
@@ -33,8 +37,9 @@
 /* contact0 */
 
 .contact0{
+    position: relative;
     width : 100%;
-    height : 1400px;
+    padding: 0 0 500px 0;
 }
 
 .contact0::before {
@@ -45,74 +50,47 @@
     background-color: #f5f5f5;
 }
 
-.contact0 > h1{
-    margin-top : 70px;
-}
-
-.members_1{
-    width : 1280px;
+.members{
+    width: 90%;
+    margin: auto;
+    padding: 0 5%;
     display: flex;
-    margin: 100px auto;
+    align-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.members_1 > li{
+.members > li{
     position : relative;
-    flex : 1;
-    height : 270px;
+    width: 300px;
+    height: auto;
     padding : 20px;
+    margin: 50px auto;
 }
 
-.members_1 > li > #more{
-    position: absolute;
+.members > li > h3{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.members > li > #more{
+    display: block;
+    width : 40%;
+    margin : auto;
     border : 1px solid black;
-    border-radius: 5px;
-    width : 100px;
+    border-radius: 10px;
     cursor : pointer;
-    bottom : 10px;
-    left : 50%;
-    transform: translate(-50%, 0);
 }
 
-.members_1 > li > #basic_img{
-    position : absolute;
-    top : 50%;
-    left : 50%;
-    transform: translate(-50%, -50%);
-    width : 170px;
+.members > li > #basic_img{
+    display: block;
+    width : 60%;
+    margin : 5% 20% 5% 20%;
     border-radius: 30%;
-}
-
-.members_2{
-    width : 960px;
-    display: flex;
-    margin: 100px auto;
-}
-
-.members_2 > li{
-    position : relative;
-    flex : 1;
-    height : 270px;
-    padding : 20px;
-}
-
-.members_2 > li > #more{
-    position: absolute;
-    border : 1px solid black;
-    border-radius: 5px;
-    width : 100px;
-    cursor : pointer;
-    bottom : 10px;
-    left : 50%;
-    transform: translate(-50%, 0);
-}
-
-.members_2 > li > #basic_img{
-    position : absolute;
-    top : 50%;
-    left : 50%;
-    transform: translate(-50%, -50%);
-    width : 170px;
-    border-radius: 30%;
+    max-width: 200px;
+    min-width: 100px;
 }
 
 /* contact1 */
@@ -141,6 +119,8 @@
 .contact1 > .more > p{
     padding-top : 12px;
 }
+
+
 
 /* member_profile */
 
@@ -174,7 +154,7 @@
 
 .member_profile {
     position: absolute;
-    top: 1200px;
+    top: 10%;
     left : 50%;
     transform: translate(-50%, 0);
     width: 600px;
@@ -298,7 +278,7 @@
 .part_content::before {
     content: "";
     display: block;
-    width: 320px;
+    width: 100%;
     height: 3px;
     margin-bottom: 30px;
     background-color: #A4A4A4;

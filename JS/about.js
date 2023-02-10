@@ -20,3 +20,7 @@
     window.addEventListener("resize", callbackFunc);
     window.addEventListener("scroll", callbackFunc);
 })();
+
+let map = document.getElementsById("map");
+map.src = "https://www.openstreetmap.org/export/embed.html?bbox=" + (lon-0.01) + 
+				"%2C" + (lat-0.01) + "%2C" + (lon+0.01) + "%2C" + (lat + 0.01);

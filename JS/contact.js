@@ -47,7 +47,3 @@ function showDetail_hs(){
 function hideDetail_hs(){
     document.querySelector('.hs').style.display="none";
 }
-
-let map = document.getElementsById("map");
-map.src = "https://www.openstreetmap.org/export/embed.html?bbox=" + (lon-0.01) + 
-				"%2C" + (lat-0.01) + "%2C" + (lon+0.01) + "%2C" + (lat + 0.01);

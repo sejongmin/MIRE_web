@@ -2,63 +2,73 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>MI:RE-SERVICE</title>
+        <meta name="viewport" content="width-device-width, initial-scale=0.8, user-scalable=no">
+        <title>MI:RE-HOME</title>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+        <script src="JS/basic.js" defer></script>
+        <script src="JS/service.js" defer></script>
         <link rel="stylesheet" type="text/css" href="CSS/service.css">
         <link rel="stylesheet" type="text/css" href="CSS/basicLayout.css">
         <link rel="stylesheet" type="text/css" href="CSS/font.css">
-        <script src="JS/basicJS.JS" defer></script>
-        <script src="JS/service.js" defer></script>
+        <link rel="stylesheet" media="(min-width:0px) and (max-width: 900px)" href="CSS/mobile.css">
     </head>
     <body>
-            <div class="header">
-                <div class="logo">
-                    <a href="index.html">
-                        <image class="logo_image" src="IMAGE/logo_c.jpg"></image>
-                    </a>
+        <header>
+            <div class="left">
+                <h1><a href="index.html">MI:RE</a></h1>
+                <a href="#a" class="all">All Menu</a>
+            </div>
+            <div class="right">
+                <div class="nav">
+                    <h2>MI:RE</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="service.html">SERVICE</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <a href="#a" class="close">close</a>
                 </div>
+            </div>
+        </header>
+        <div class=".dim"></div>
 
-                <ul class="nav">
-                    <li><a href="index.html" class="btn">HOME</a></li>
-                    <li><a href="about.html" class="btn">ABOUT</a></li>
-                    <li><a href="service.html" class="btn">SERVICE</a></li>
-                    <li><a href="contact.html" class="btn">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="progressive">
-                <span class="bar"></span>
-            </div>
-        <div class="wrap">
+        <main>
             <div class="intro">
-                <h1 class="f-center fs-intro">SERVICE</h1>
-                <p class="f-center fs-big fc-lgray">Back To The Future</p>
+                <div class="box">
+                    <h1 class="f-center fs-intro">SERVICE</h1>
+                    <p class="f-center fs-big fc-lgray">Back To The Future</p>
+                </div>
             </div>
 
             <div class="service0">
                     <h1 class="f-center fs-main">22'SS BTTF</h1>
-                    <div class="f-center fs-big fc-lgray">
+                    <h2 class="f-center fs-big fc-lgray">
                         MI:RE의 첫 작품이자 한정판 제품으로<br>
                         전세계에 단 7장밖에 없다
-                    </div>
+                    </h2>
 
                     <div class="A">
                         <div>
-                            <image src="IMAGE/service/22SS_1.jpg"></image>
+                            <image src="IMAGE/service/22SS_1.jpg" alt="22SS_1"></image>
                         </div>
                         <div>
-                            <image src="IMAGE/service/22SS_2.jpg"></image>
+                            <image src="IMAGE/service/22SS_2.jpg" lat="22SS_1"></image>
                         </div>
                     </div>
             </div>
 
             <div class="service1">
                 <h1 class="f-center fs-main">22'FW BTTF</h1>
-                <div class="f-center fs-big fc-lgray">
-                    MI:RE의 첫 정규시즌 후드티와 맨투맨이다
-                </div>
+                <h2 class="f-center fs-big fc-lgray">
+                    MI:RE의 첫 정규시즌 후드티와 맨투맨
+                </h2>
                 <ul class="B_1">
                     <li>
                         <figure class="fourLine">
-                            <img src="IMAGE/service/22FW_1.jpg" alt="BTTF_NAVY"/>
+                            <img src="IMAGE/service/22FW_1.jpg" alt="BTTF_NAVY">
                             <div class="title">
                                 <div>
                                     <h2 class="fc-white">BTTF CLUB</h2>
@@ -178,11 +188,11 @@
             
             <div class="service2">
             </div>
-        </div>
+        </main>
         
         <footer>
             <div>
-                <img class="logo_x_image" src="IMAGE/logo_x.png" alt="LOGO">
+                <h1>MI:RE</h1>
             </div>
             <div>
                 <p class="fs-large fc-white fw-light">
