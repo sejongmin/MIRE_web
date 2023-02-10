@@ -265,6 +265,10 @@ figure.fourLine a {
     right: 0;
 }
 
+figure.fourLine:hover{
+    background-color: #000;
+}
+
 figure.fourLine:hover img,
 figure.fourLine.hover img {
     zoom: 1;
