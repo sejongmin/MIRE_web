@@ -58,13 +58,7 @@
     margin:50px auto;
 }
 
-.A > div:first-child{
-    width : 630px;
-    margin: 5px;
-    overflow: hidden;
-}
-
-.A > div:last-child{
+.A > div{
     width : 630px;
     margin: 5px;
     overflow: hidden;
@@ -102,8 +96,7 @@
 .B_1{
     width : 1280px;
     display : flex;
-    margin : auto;
-    margin-top : 50px;
+    margin : 50px auto 0 auto;
 }
 
 .B_1 > li{
