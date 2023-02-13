@@ -130,17 +130,6 @@ header .close{
     background: url("../IMAGE/close.png") no-repeat 0 0 / 1rem auto;
 }
 
-.dim{
-    display: none;
-    position: fixed;
-    left:0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-    z-index: 100;
-}
-
 /* footer */
 
 footer{
@@ -367,7 +356,7 @@ footer h1{
 /* contact profile */
 
 .member_profile {
-    top: 7%;
+    top: 5%;
     width: 80%;
     max-width: 600px;
     padding: 5%;
@@ -393,4 +382,8 @@ footer h1{
 .introduce > .contact .contact_list {
     display: block;
     margin-right: 5%;
+}
+
+.sns {
+    margin-bottom: 100px;
 }

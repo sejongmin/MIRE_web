@@ -47,3 +47,19 @@ function showDetail_hs(){
 function hideDetail_hs(){
     document.querySelector('.hs').style.display="none";
 }
+
+
+$(document).ready(function(){
+    $(".more").on("click", function(){
+        $(".dim").show();
+        $('html').css({
+            overflow:'auto',
+            height: '100%'
+        });
+    });
+
+    $(".close").on("click", function(){
+        $(".dim").hide();
+        $('html').removeAttr('style');
+    });
+});
