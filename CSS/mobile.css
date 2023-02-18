@@ -194,11 +194,15 @@ footer h1{
 }
 
 /* intro */
-.intro p{
+.intro_about p,
+.intro_service p,
+.intro_contact p{
     top:40px;
 }
 
-.intro .box:hover p {
+.intro_about .box:hover p,
+.intro_service .box:hover p,
+.intro_contact .box:hover p {
     top:55px;
 }
 
@@ -386,4 +390,10 @@ footer h1{
 
 .sns {
     margin-bottom: 100px;
+}
+
+.close{
+    width: 25px;
+    top : 5px;
+    right : 5px;
 }

@@ -1,12 +1,12 @@
 /* intro */
 
-.intro{
+.intro_about{
     position: relative;
     width: 100%;
     height: 800px;
 }
 
-.intro .box{
+.intro_about .box{
     position: absolute;
     width: 300px;
     top:25%;
@@ -14,7 +14,7 @@
     transform: translateX(-50%);
 }
 
-.intro p{
+.intro_about p{
     font-family: Lato,"Helvetica Neue" ;
     font-weight: 300;
     position: absolute;
@@ -25,7 +25,7 @@
     transition: all .2s ease;
 }
 
-.intro .box:hover p {
+.intro_about .box:hover p {
     top:85px;
     z-index: 2;
     opacity: 1;

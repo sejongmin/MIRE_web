@@ -1,12 +1,12 @@
 /* intro */
 
-.intro{
+.intro_service{
     position: relative;
     height: 800px;
     width: 100%;
 }
 
-.intro .box{
+.intro_service .box{
     position: absolute;
     width: 300px;
     top:25%;
@@ -14,7 +14,7 @@
     transform: translateX(-50%);
 }
 
-.intro p{
+.intro_service p{
     font-family: Lato,"Helvetica Neue" ;
     font-weight: 300;
     position: absolute;
@@ -26,7 +26,7 @@
     transition: all .2s ease;
 }
 
-.intro .box:hover p {
+.intro_service .box:hover p {
     bottom:0px;
     top:85px;
     opacity: 1;

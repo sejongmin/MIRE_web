@@ -22,5 +22,5 @@
 })();
 
 let map = document.getElementsById("map");
-map.src = "https://www.openstreetmap.org/export/embed.html?bbox=" + (lon-0.01) + 
-				"%2C" + (lat-0.01) + "%2C" + (lon+0.01) + "%2C" + (lat + 0.01);
+map.src = "https://www.openstreetmap.org/export/embed.html?bbox=" + (lon-0.03) + 
+				"%2C" + (lat-0.03) + "%2C" + (lon+0.03) + "%2C" + (lat + 0.03);
