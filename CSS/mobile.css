@@ -150,16 +150,11 @@ footer h1{
 }
 
 .intro_home .box{
-    width: 100px;
+    width: 150px;
 }
 
 .intro_home .box p{
-    top:60px;
-}
-
-.intro_home .box:hover p{
-    top:75px;
-    left: 0;
+    top:80px;
 }
 
 .hourglass{
