@@ -9,7 +9,7 @@ var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var t;
 
 var anim = function() {
-    inc = (inc + 1) % 7;
+    inc = (inc + 1) % 4;
     if (inc === 0 && out < str.length) {
         docuid('anim').appendChild(document.createTextNode(str[out]));
         out++;
@@ -21,7 +21,7 @@ var anim = function() {
       chars[Math.floor(Math.random() * chars.length)];
 };
 
-t = setInterval(anim, 45);
+t = setInterval(anim, 50);
 docuid('anim').innerHTML = '';
 
 setTimeout(function(){
