@@ -26,4 +26,4 @@ docuid('anim').innerHTML = '';
 
 setTimeout(function(){
     clearInterval(t);
-}, 8500);
+}, 5500);
